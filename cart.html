@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keranjang - EA Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    .hapus-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="products.html">Produk</a> |
+    <a href="featured.html">Produk Unggulan</a> |
+    <a href="cart.html">Keranjang</a> |
+    <a href="contact.html">Kontak</a> |
+    <a href="about.html">Tentang Kami</a>
+  </nav>
+
+  <hr />
+
+  <header>
+    <h1>Keranjang Belanja</h1>
+  </header>
+
+  <article class="box">
+    <ul id="cart-items"></ul>
+    <br>
+    <button onclick="localStorage.clear(); location.reload();">Kosongkan Keranjang</button>
+  </article>
+
+  <hr />
+
+  <footer>
+    <p>Copyright &copy; 2025 EA Beauty.</p>
+  </footer>
+</body>
+</html>
